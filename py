@@ -14,3 +14,16 @@ print(f"This person's insurance cost is {insurance_cost} dollars")
 # Age Factor: Increase age by 4 years and calculate new insurance cost
 age += 4
 new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+
+# Calculate the change in insurance cost due to age increase
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+
+# Print the change in insurance cost due to age increase
+print(f"The change in cost of insurance after increasing the age by 4 years is {change_in_insurance_cost} dollars")
+
+# Reset age to original value
+age = 28
+
+# BMI Factor: Increase BMI by 3.1 and calculate new insurance cost
+bmi += 3.1
+new_insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
